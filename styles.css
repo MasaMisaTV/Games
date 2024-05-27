@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    animation: slideInFromTop 1s ease-out;
+}
+
+.subtitle, .description, .instructions, .challenge {
+    margin-bottom: 1em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.play-button {
+    padding: 1em 2em;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #FF5733;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #C70039;
+}
+
+.play-button:active {
+    transform: scale(0.95);
+    animation: shine 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF5733, 0 0 40px #FF5733, 0 0 50px #FF5733, 0 0 60px #FF5733, 0 0 70px #FF5733;
+    }
+    100% {
+        box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #FF5733, 0 0 20px #FF5733, 0 0 30px #FF5733, 0 0 40px #FF5733, 0 0 50px #FF5733;
+    }
+}
