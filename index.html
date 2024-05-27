@@ -17,7 +17,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         @keyframes gradientBackground {
             0% { background-position: 0% 50%; }
@@ -96,6 +96,25 @@
             z-index: -1;
             opacity: 0.7;
         }
+        .masamisa-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .masamisa-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+        .masamisa-link a:hover {
+            background: linear-gradient(135deg, #feb47b, #ff7e5f);
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
@@ -130,6 +149,10 @@
 
         <div class="footer">
             <p>MasaMisaTV<br>Masaki Ono / 小野 正輝</p>
+        </div>
+        
+        <div class="masamisa-link">
+            <a href="https://masamisa.com" target="_blank">Visit masamisa.com</a>
         </div>
     </div>
 </body>
