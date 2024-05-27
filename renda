@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連打の天才3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">連打の天才3D</h1>
+        <p class="subtitle">マサキ 9歳 小学3年生</p>
+        <p class="description">
+            実は、3カ月以上かけて3Dゲームを作っていました。
+        </p>
+        <p class="instructions">
+            <strong>操作方法は超簡単</strong><br>
+            - Hitで叩いてNextで次へ進む。<br>
+            - 頭を叩いたらアウト！
+        </p>
+        <p class="challenge">
+            僕の記録を抜けるかな？<br>
+            ランキングで世界一を目指せ！
+        </p>
+        <button class="play-button" onclick="playGame()">プレイする</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
