@@ -13,6 +13,10 @@ body {
 .container {
     text-align: center;
     animation: fadeIn 2s ease-in-out;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .title {
@@ -21,29 +25,37 @@ body {
     animation: slideInFromTop 1s ease-out;
 }
 
-.subtitle, .description, .instructions, .challenge {
+.subtitle {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.activities, .profiles, .vision, .categories {
     margin-bottom: 1em;
     animation: fadeIn 2s ease-in-out;
 }
 
-.play-button {
-    padding: 1em 2em;
+.activities li {
+    margin-bottom: 0.5em;
+}
+
+.stats, .networks {
     font-size: 1.5em;
-    color: #fff;
-    background-color: #FF5733;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 1em;
 }
 
-.play-button:hover {
-    background-color: #C70039;
+.profiles h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
-.play-button:active {
-    transform: scale(0.95);
-    animation: shine 1s ease-in-out;
+.vision {
+    font-size: 1.5em;
+}
+
+.categories h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
 }
 
 @keyframes fadeIn {
@@ -54,13 +66,4 @@ body {
 @keyframes slideInFromTop {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(0); }
-}
-
-@keyframes shine {
-    0% {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF5733, 0 0 40px #FF5733, 0 0 50px #FF5733, 0 0 60px #FF5733, 0 0 70px #FF5733;
-    }
-    100% {
-        box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #FF5733, 0 0 20px #FF5733, 0 0 30px #FF5733, 0 0 40px #FF5733, 0 0 50px #FF5733;
-    }
 }
