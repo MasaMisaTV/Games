@@ -3,69 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>連打の天才3D</title>
+    <title>Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #121212;
-            color: #FFFFFF;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            color: #fff;
+            margin: 0;
+            padding: 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
+            min-height: 100vh;
         }
-        h1, h2 {
-            text-align: center;
-            margin: 0.5em 0;
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            position: relative;
         }
         h1 {
-            font-size: 3em;
-            text-shadow: 0 0 10px #00FF00;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #444;
         }
         h2 {
-            font-size: 2em;
-            text-shadow: 0 0 5px #00FF00;
+            margin-top: 40px;
+            font-size: 1.5em;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
         }
         p {
-            font-size: 1.2em;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #00bfff;
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li a {
+            display: block;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
             text-align: center;
-            max-width: 80%;
-            margin: 0.5em 0;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
-        .highlight {
-            color: #00FF00;
-            font-weight: bold;
+        ul li a:hover {
+            background: linear-gradient(135deg, #00bfff, #1e90ff);
+            transform: translateY(-5px);
         }
-        .button {
-            background-color: #00FF00;
-            color: #121212;
-            border: none;
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #ccc;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            z-index: -1;
+            opacity: 0.7;
+        }
+        .masamisa-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .masamisa-link a {
+            display: inline-block;
             padding: 10px 20px;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+            border-radius: 8px;
             font-size: 1.2em;
-            cursor: pointer;
-            margin: 1em;
-            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
         }
-        .button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 10px #00FF00;
-        }
-        .button:active {
-            transform: scale(0.9);
-            box-shadow: 0 0 5px #00FF00;
+        .masamisa-link a:hover {
+            background: linear-gradient(135deg, #feb47b, #ff7e5f);
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
-    <h1>連打の天才3D</h1>
-    <h2>マサキ 9歳 小学3年生</h2>
-    <p>実は3カ月以上かけて3Dゲームを作ってました。</p>
-    <p>操作方法は超簡単<br>
-    <span class="highlight">Hit</span>で叩いて<span class="highlight">Next</span>で次へ、頭を叩いたらアウト</p>
-    <p>僕の記録を抜けるかな？<br>
-    ランキングで世界一を目指せ！</p>
-    <button class="button">プレイする</button>
+    <div class="container">
+        <h1>Privacy Policy / プライバシーポリシー</h1>
+
+        <h2>About ad delivery / 広告配信について</h2>
+        <p>Apps provided by MasaMisaApp use advertising services distributed by third parties.</p>
+        <p>MasaMisaAppの提供するアプリは、第三者配信の広告サービスを利用しています。</p>
+        <p>Apps provided by MasaMisaGames use advertising services distributed by third parties.</p>
+        <p>MasaMisaGamesの提供するアプリは、第三者配信の広告サービスを利用しています。</p>
+        <p>These third parties may provide content and advertising and serve ads in response to cookies, advertising identifiers, etc. Please confirm from the link of the application privacy policy of the ad distribution company below.</p>
+        <p>該当第三者がコンテンツおよび宣伝を提供し、クッキー・広告識別子などに応じて広告を配信している場合があります。以下の広告配信事業者のアプリケーション・プライバシーポリシーのリンクよりご確認ください。</p>
+        <ul>
+            <li><a href="https://unity3d.com/jp/legal/privacy-policy" target="_blank">Unity Ads Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Google Ads (AdMob) Policy</a></li>
+        </ul>
+
+        <h2>User information / 利用者情報</h2>
+        <p>Applications provided by MasaMisaApp use Microsoft Azure PlayFab for usage analysis. Data collected through the use of Microsoft Azure PlayFab is managed based on Microsoft's privacy policy.</p>
+        <p>MasaMisaAppの提供するアプリは、利用状況解析のためにMicrosoft Azure PlayFabを使用しています。Microsoft Azure PlayFabの利用により収集されたデータは、Microsoft社のプライバシーポリシーに基づいて管理されます。</p>
+        <p>Applications provided by MasaMisaGames use Microsoft Azure PlayFab for usage analysis. Data collected through the use of Microsoft Azure PlayFab is managed based on Microsoft's privacy policy.</p>
+        <p>MasaMisaGamesの提供するアプリは、利用状況解析のためにMicrosoft Azure PlayFabを使用しています。Microsoft Azure PlayFabの利用により収集されたデータは、Microsoft社のプライバシーポリシーに基づいて管理されます。</p>
+        <ul>
+            <li><a href="https://www.microsoft.com/ja-jp/trust-center/privacy" target="_blank">Microsoft's Privacy Policy</a></li>
+            <li><a href="https://playfab.com/terms/" target="_blank">PlayFab Terms of Service</a></li>
+        </ul>
+
+        <h2>Disclaimer / 免責事項</h2>
+        <p>The application provided by MasaMisaApp has been tested for operation, but it does not guarantee operation under all circumstances. Please note that we are not responsible for any damages caused to users or third parties in connection with apps provided by MasaMisaApp.</p>
+        <p>MasaMisaAppの提供するアプリは動作検証を行っておりますが、全ての状況下において動作を保証しているわけではありません。MasaMisaAppの提供するアプリに関連して利用者または第三者に生じた損害について、賠償の責任を一切負いかねますことご了承ください。</p>
+        <p>The application provided by MasaMisaGames has been tested for operation, but it does not guarantee operation under all circumstances. Please note that we are not responsible for any damages caused to users or third parties in connection with apps provided by MasaMisaGames.</p>
+        <p>MasaMisaGamesの提供するアプリは動作検証を行っておりますが、全ての状況下において動作を保証しているわけではありません。MasaMisaGamesの提供するアプリに関連して利用者または第三者に生じた損害について、賠償の責任を一切負いかねますことご了承ください。</p>
+
+        <h2>Changes to privacy policy / プライバシーポリシーの変更</h2>
+        <p>MasaMisaApp will continuously review the content of this policy and strive to improve it as necessary. The latest amended Privacy Policy will always be disclosed on this page.</p>
+        <p>MasaMisaAppは本ポリシーの内容を継続的に見直し、必要に応じてその改善に努めます。修正された最新のプライバシーポリシーは常に本ページにて開示されます。</p>
+        <p>MasaMisaGames will continuously review the content of this policy and strive to improve it as necessary. The latest amended Privacy Policy will always be disclosed on this page.</p>
+        <p>MasaMisaGamesは本ポリシーの内容を継続的に見直し、必要に応じてその改善に努めます。修正された最新のプライバシーポリシーは常に本ページにて開示されます。</p>
+
+        <div class="footer">
+            <p>MasaMisaTV<br>Masaki Ono / 小野 正輝</p>
+        </div>
+
+        <div class="masamisa-link">
+            <a href="https://masamisa.com" target="_blank">Visit masamisa.com</a>
+            <a href="https://www.masamisa.com" target="_blank">Explore masamisa.com</a>
+        </div>
+    </div>
 </body>
 </html>
