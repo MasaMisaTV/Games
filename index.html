@@ -3,83 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasaMisa Games</title>
+    <title>連打の天才3D</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        .container {
-            padding: 2rem;
-        }
-        .game {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1rem;
-            padding: 1rem;
+            background-color: #121212;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
             display: flex;
+            flex-direction: column;
             align-items: center;
-        }
-        .game img {
-            width: 100px;
-            height: 100px;
-            margin-right: 1rem;
-        }
-        .game .details {
-            flex-grow: 1;
-        }
-        .game .details h3 {
+            justify-content: center;
+            height: 100vh;
             margin: 0;
-            font-size: 1.5rem;
         }
-        .game .details p {
-            margin: 0.5rem 0 0;
+        h1, h2 {
+            text-align: center;
+            margin: 0.5em 0;
         }
-        .game a {
-            color: #007BFF;
-            text-decoration: none;
+        h1 {
+            font-size: 3em;
+            text-shadow: 0 0 10px #00FF00;
+        }
+        h2 {
+            font-size: 2em;
+            text-shadow: 0 0 5px #00FF00;
+        }
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 80%;
+            margin: 0.5em 0;
+        }
+        .highlight {
+            color: #00FF00;
             font-weight: bold;
+        }
+        .button {
+            background-color: #00FF00;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 1em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00FF00;
+        }
+        .button:active {
+            transform: scale(0.9);
+            box-shadow: 0 0 5px #00FF00;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>MasaMisa Games</h1>
-    </div>
-    <div class="container">
-        <div class="game">
-            <img src="game1.jpg" alt="Game 1">
-            <div class="details">
-                <h3>Game Title 1</h3>
-                <p>A fun and exciting game.</p>
-                <a href="#">Play Now</a>
-            </div>
-        </div>
-        <div class="game">
-            <img src="game2.jpg" alt="Game 2">
-            <div class="details">
-                <h3>Game Title 2</h3>
-                <p>An adventure you don't want to miss.</p>
-                <a href="#">Play Now</a>
-            </div>
-        </div>
-        <div class="game">
-            <img src="game3.jpg" alt="Game 3">
-            <div class="details">
-                <h3>Game Title 3</h3>
-                <p>A challenging puzzle game.</p>
-                <a href="#">Play Now</a>
-            </div>
-        </div>
-    </div>
+    <h1>連打の天才3D</h1>
+    <h2>マサキ 9歳 小学3年生</h2>
+    <p>実は3カ月以上かけて3Dゲームを作ってました。</p>
+    <p>操作方法は超簡単<br>
+    <span class="highlight">Hit</span>で叩いて<span class="highlight">Next</span>で次へ、頭を叩いたらアウト</p>
+    <p>僕の記録を抜けるかな？<br>
+    ランキングで世界一を目指せ！</p>
+    <button class="button">プレイする</button>
 </body>
 </html>
