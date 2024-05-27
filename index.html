@@ -3,156 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>MasaMisa Games</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            background-size: 400% 400%;
-            animation: gradientBackground 15s ease infinite;
-            color: #fff;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
         }
-        @keyframes gradientBackground {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
         }
         .container {
-            max-width: 900px;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            position: relative;
+            padding: 2rem;
         }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #444;
-        }
-        h2 {
-            margin-top: 40px;
-            font-size: 1.5em;
-            border-bottom: 1px solid #555;
-            padding-bottom: 5px;
-        }
-        p {
-            line-height: 1.8;
-            font-size: 1.1em;
-        }
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: #00bfff;
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        ul li a {
-            display: block;
-            background: linear-gradient(135deg, #1e90ff, #00bfff);
-            color: #fff;
-            padding: 15px 20px;
+        .game {
+            background-color: white;
             border-radius: 8px;
-            text-align: center;
-            transition: background 0.3s, transform 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
         }
-        ul li a:hover {
-            background: linear-gradient(135deg, #00bfff, #1e90ff);
-            transform: translateY(-5px);
+        .game img {
+            width: 100px;
+            height: 100px;
+            margin-right: 1rem;
         }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #ccc;
+        .game .details {
+            flex-grow: 1;
         }
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.05);
-            z-index: -1;
-            opacity: 0.7;
+        .game .details h3 {
+            margin: 0;
+            font-size: 1.5rem;
         }
-        .masamisa-link {
-            text-align: center;
-            margin-top: 20px;
+        .game .details p {
+            margin: 0.5rem 0 0;
         }
-        .masamisa-link a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: linear-gradient(135deg, #ff7e5f, #feb47b);
-            color: #fff;
-            border-radius: 8px;
-            font-size: 1.2em;
+        .game a {
+            color: #007BFF;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: background 0.3s, transform 0.3s;
-        }
-        .masamisa-link a:hover {
-            background: linear-gradient(135deg, #feb47b, #ff7e5f);
-            transform: translateY(-5px);
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>MasaMisa Games</h1>
+    </div>
     <div class="container">
-        <h1>Privacy Policy / プライバシーポリシー</h1>
-
-        <h2>About ad delivery / 広告配信について</h2>
-        <p>Apps provided by MasaMisaGames use advertising services distributed by third parties.</p>
-        <p>MasaMisaGamesの提供するアプリは、第三者配信の広告サービスを利用しています。</p>
-        <p>These third parties may provide content and advertising and serve ads in response to cookies, advertising identifiers, etc. Please confirm from the link of the application privacy policy of the ad distribution company below.</p>
-        <p>該当第三者がコンテンツおよび宣伝を提供し、クッキー・広告識別子などに応じて広告を配信している場合があります。以下の広告配信事業者のアプリケーション・プライバシーポリシーのリンクよりご確認ください。</p>
-        <ul>
-            <li><a href="https://unity3d.com/jp/legal/privacy-policy" target="_blank">Unity Ads Policy</a></li>
-            <li><a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Google Ads (AdMob) Policy</a></li>
-        </ul>
-
-        <h2>User information / 利用者情報</h2>
-        <p>Applications provided by MasaMisaGames use Microsoft Azure PlayFab for usage analysis. Data collected through the use of Microsoft Azure PlayFab is managed based on Microsoft's privacy policy.</p>
-        <p>MasaMisaGamesの提供するアプリは、利用状況解析のためにMicrosoft Azure PlayFabを使用しています。Microsoft Azure PlayFabの利用により収集されたデータは、Microsoft社のプライバシーポリシーに基づいて管理されます。</p>
-        <ul>
-            <li><a href="https://www.microsoft.com/ja-jp/trust-center/privacy" target="_blank">Microsoft's Privacy Policy</a></li>
-            <li><a href="https://playfab.com/terms/" target="_blank">PlayFab Terms of Service</a></li>
-        </ul>
-
-        <h2>Disclaimer / 免責事項</h2>
-        <p>The application provided by MasaMisaGames has been tested for operation, but it does not guarantee operation under all circumstances. Please note that we are not responsible for any damages caused to users or third parties in connection with apps provided by MasaMisaGames.</p>
-        <p>MasaMisaGamesの提供するアプリは動作検証を行っておりますが、全ての状況下において動作を保証しているわけではありません。MasaMisaGamesの提供するアプリに関連して利用者または第三者に生じた損害について、賠償の責任を一切負いかねますことご了承ください。</p>
-
-        <h2>Changes to privacy policy / プライバシーポリシーの変更</h2>
-        <p>MasaMisaGames will continuously review the content of this policy and strive to improve it as necessary. The latest amended Privacy Policy will always be disclosed on this page.</p>
-        <p>MasaMisaGamesは本ポリシーの内容を継続的に見直し、必要に応じてその改善に努めます。修正された最新のプライバシーポリシーは常に本ページにて開示されます。</p>
-
-        <div class="footer">
-            <p>MasaMisaTV<br>Masaki Ono / 小野 正輝</p>
+        <div class="game">
+            <img src="game1.jpg" alt="Game 1">
+            <div class="details">
+                <h3>Game Title 1</h3>
+                <p>A fun and exciting game.</p>
+                <a href="#">Play Now</a>
+            </div>
         </div>
-        
-        <div class="masamisa-link">
-            <a href="https://www.masamisa.com" target="_blank">Explore masamisa.com</a>
+        <div class="game">
+            <img src="game2.jpg" alt="Game 2">
+            <div class="details">
+                <h3>Game Title 2</h3>
+                <p>An adventure you don't want to miss.</p>
+                <a href="#">Play Now</a>
+            </div>
+        </div>
+        <div class="game">
+            <img src="game3.jpg" alt="Game 3">
+            <div class="details">
+                <h3>Game Title 3</h3>
+                <p>A challenging puzzle game.</p>
+                <a href="#">Play Now</a>
+            </div>
         </div>
     </div>
 </body>
