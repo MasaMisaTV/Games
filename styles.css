@@ -1,108 +1,83 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
 body {
   background: #0d0d0d;
   color: #ffffff;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 .hero {
-  position: relative;
   height: 100vh;
   background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.hero-content {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 10px;
+  position: relative;
 }
 
 .hero h1 {
   font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  animation: neon-glow 2s infinite alternate;
+  animation: glow 2s infinite alternate;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-
-.btn {
+.hero .btn {
   display: inline-block;
+  margin: 1rem;
   padding: 0.8rem 1.5rem;
-  margin-top: 1.5rem;
   border: 2px solid #00ff99;
   color: #00ff99;
   text-decoration: none;
-  font-size: 1rem;
   transition: background 0.3s, color 0.3s;
 }
 
-.btn:hover {
+.hero .btn:hover {
   background: #00ff99;
   color: #0d0d0d;
 }
 
 .games-section {
   padding: 4rem 2rem;
-  background: #111111;
   text-align: center;
-}
-
-.games-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  background: #111111;
 }
 
 .game-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border: 1px solid #00ff99;
+  padding: 1.5rem;
+  border: 2px solid #00ff99;
   border-radius: 10px;
   width: 280px;
   transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+.youtube-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: auto;
 }
 
 .about-section {
   padding: 4rem 2rem;
-  background: #0d0d0d;
   text-align: center;
+  background: #0d0d0d;
 }
 
-footer {
-  background: #0d0d0d;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-@keyframes neon-glow {
-  from {
-    text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99;
-  }
-  to {
-    text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99, 0 0 60px #00ff99;
-  }
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99; }
+  100% { text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99; }
 }
