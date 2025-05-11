@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #00ff99;
+  text-shadow: 0 0 20px #00ff99;
+}
+
+.activities-section {
+  padding: 4rem 2rem;
+  background: #111111;
+  text-align: center;
+}
+
+.activity {
+  margin-bottom: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.activity:hover {
+  transform: scale(1.05);
+}
+
+.activity h3 {
+  font-size: 1.8rem;
+  color: #00ff99;
+}
+
+.activity ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: auto;
+  padding-left: 2rem;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #00ff99;
+  color: #00ff99;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00ff99;
+  color: #0d0d0d;
+}
