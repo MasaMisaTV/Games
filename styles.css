@@ -68,9 +68,9 @@ body {
 
 .game-cards {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .card {
@@ -78,7 +78,7 @@ body {
   padding: 2rem;
   border: 1px solid #00ff99;
   border-radius: 10px;
-  width: 300px;
+  width: 280px;
   transition: transform 0.3s;
 }
 
