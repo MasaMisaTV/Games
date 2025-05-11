@@ -1,21 +1,42 @@
-body {
-  background-color: #0d0d0d;
-  color: #ffffff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 2rem;
+body {
+  background: #0d0d0d;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
 .hero {
-  background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover;
+  position: relative;
   height: 100vh;
+  background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  animation: neon-glow 2s infinite alternate;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -32,4 +53,56 @@ h1 {
 .btn:hover {
   background: #00ff99;
   color: #0d0d0d;
+}
+
+.games-section {
+  padding: 4rem 2rem;
+  background: #111111;
+  text-align: center;
+}
+
+.games-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.game-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border: 1px solid #00ff99;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.about-section {
+  padding: 4rem 2rem;
+  background: #0d0d0d;
+  text-align: center;
+}
+
+footer {
+  background: #0d0d0d;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99;
+  }
+  to {
+    text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99, 0 0 60px #00ff99;
+  }
 }
