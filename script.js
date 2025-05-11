@@ -1,7 +1,8 @@
 // スムーズスクロール
 document.querySelector('.btn').addEventListener('click', function(e) {
   e.preventDefault();
-  document.querySelector('#games').scrollIntoView({
+  const target = e.target.getAttribute('href');
+  document.querySelector(target).scrollIntoView({
     behavior: 'smooth'
   });
 });
