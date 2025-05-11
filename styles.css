@@ -1,83 +1,62 @@
-body {
-  background: #0d0d0d;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
-.hero {
-  height: 100vh;
-  background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-}
-
-.hero h1 {
-  font-size: 4rem;
-  animation: glow 2s infinite alternate;
-}
-
-.hero .btn {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.8rem 1.5rem;
-  border: 2px solid #00ff99;
-  color: #00ff99;
-  text-decoration: none;
-  transition: background 0.3s, color 0.3s;
-}
-
-.hero .btn:hover {
-  background: #00ff99;
-  color: #0d0d0d;
-}
-
-.games-section {
+.activities-section {
   padding: 4rem 2rem;
+  background: #1a1a1a;
+  color: #ffffff;
   text-align: center;
-  background: #111111;
 }
 
-.game-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+.activities-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #00ff99;
+  border-bottom: 3px solid #00ff99;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border: 2px solid #00ff99;
+.activity {
+  margin-bottom: 3rem;
+}
+
+.activity h3 {
+  font-size: 1.8rem;
+  color: #00ff99;
+  margin-bottom: 1rem;
+}
+
+.activity p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.activity ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  margin: auto;
+  display: inline-block;
+}
+
+.activity-img {
+  max-width: 500px;
+  margin-top: 1rem;
   border-radius: 10px;
-  width: 280px;
+  box-shadow: 0 0 20px #00ff99;
   transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.1);
-}
-
-.youtube-section {
-  padding: 4rem 2rem;
-  text-align: center;
+.activity-img:hover {
+  transform: scale(1.05);
 }
 
 .video-wrapper {
-  max-width: 800px;
-  margin: auto;
+  margin-bottom: 1rem;
 }
 
-.about-section {
-  padding: 4rem 2rem;
-  text-align: center;
-  background: #0d0d0d;
-}
-
-@keyframes glow {
-  0% { text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99; }
-  100% { text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99; }
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
