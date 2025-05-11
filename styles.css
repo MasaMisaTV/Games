@@ -1,0 +1,35 @@
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid #00ff99;
+  color: #00ff99;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background: #00ff99;
+  color: #0d0d0d;
+}
